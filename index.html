@@ -1,4 +1,4 @@
-<html>
+html>
 <tittle> headers </tittle>
 <ul class="dropdown-menu">
   <li><h6 class="dropdown-header">Dropdown header</h6></li>
@@ -131,4 +131,226 @@
   <p id="demo">nombres</p>
 
   <!-- Botón 1: Frida kahlo -->
-  <button onclick="document.getElementById('d
+  <button onclick="document.getElementById('demo').style.fontSize = '32px';">
+    Frida Kahlo
+  </button>
+
+  <!-- Botón 2: José guadalupe posada -->
+  <button onclick="animarTextoPorTiempo();">
+    José Guadalupe Posada
+  </button>
+
+  <!-- Botón 3: María Izquierdo -->
+  <button onclick="document.getElementById('demo').style.fontWeight = 'bold';">
+    María Izquierdo
+  </button>
+
+  <!-- Botón 4:David Alfaro Siqueiros-->
+  <button onclick="document.getElementById('demo').style.fontSize = '12px';">
+    David Alfaro Siqueiros
+  </button>
+
+  <!-- Botón 5: Centrar -->
+  <button onclick="document.getElementById('titulo').classList.toggle('centrado');">
+    Diego Rivera
+  </button>
+
+  <script>
+    function animarTextoPorTiempo() {
+      const texto = document.getElementById('demo');
+      texto.classList.add('animacion');
+      setTimeout(() => {
+        texto.classList.remove('animacion');
+      }, 3000); // 3 segundos
+    }
+  </script>
+
+</body>
+</html>
+<hr>
+<html>
+<head>
+<title>el Arte de México
+</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Barra de navegación arcoíris */
+.rainbow-nav {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  color: white; /* Texto blanco */
+  padding: 10px 0; /* Ajusta el padding según sea necesario */
+  text-align: center;
+}
+
+.rainbow-nav h1 {
+  margin: 0; /* Elimina márgenes por defecto del h1 */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  background-color: white;
+  padding: 10px;
+  display: flex; /* Para alinear la lupa y el input */
+  align-items: center; /* Alinea verticalmente */
+}
+
+.search-bar input[type="text"] {
+  flex: 1; /* Ocupa el espacio disponible */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+
+.search-bar img { /* Icono de lupa */
+  width: 20px;
+  height: 20px;
+  margin-left: 10px; /* Espacio entre el input y la lupa */
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
+/* Imágenes horizontales */
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.images-container img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Carrusel de promociones (deslizable) */
+.promotions-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.promotions-container img {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+}
+
+/Sección de productos/
+.products-container{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
+    justify-content: space-around;
+}
+
+.product{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px; /* Ajusta según sea necesario */
+}
+
+.product img{
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="green-nav">
+  <h1>El arte de México</h1>
+</div>
+
+<div class="search-bar">
+  <input type="text" placeholder="Buscar pinturas..">
+  <img src="lupa.png" alt="Lupa"> </div>
+
+<div class="pinturas">
+  
+  <img src="https://th.bing.com/th/id/OIP.Isa7lxGN3uitq3pYTwCzrAHaFP?w=237&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsCuWNfFqaYiQ7Cc3KKeGtp1-IQfS1FouzzTS9bVcBy4HQXNBJ-7ylxHYLtcoraRlaT8&usqp=CAU" width="200">
+
+  <img src="data:image/webp;base64,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" alt="https://cazaofertas.com.mx/wp-content/uploads/2020/09/liquidacion-la-marina-puntos-rojos.jpg" width="200">
+
+  <img src="https://th.bing.com/th/id/OIP.CxZmF8NHNWEraUXOcpclgwHaD4?w=314&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTliTizPQTWLW9zt2XDUMCQ-ZX6SB22GVpmMKhcofxg4coEDHbc-aeaUpiDKc-dBCjXcdE&usqp=CAU" width="200">
+</div>
+<div class="art-container">
+    <div class="art">
+        <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/06/b6ff324af2af9bae048838dfc8afcb14.jpg" alt="pintura">
+        <h3> María Izquierdo</h3>
+        
+    </div>
+    <div class="art">
+        <img src="https://www.google.com/search?client=ms-android-attmexico-mx-rvc3&sca_esv=dcff718841928c00&sxsrf=AE3TifN-86CxiyVniU-4lxb7B1NTJE6Mjg:1750267675394&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQht6_BFq6vBIoFFRK7qchKG1cRgcE0P7z3SNizmlu0Qk8MgiKsZ0mDOS2di7FnzoXfcyjU12QCbBvNbYCec27QW8QYroq79-7AbFnsM02mfwlOcQQGMBxDl6NjI62he7_zG_CVmUYREeMNMa6UgjGiCuin51LwQhTPJRsKkCcT8bve2R90D1a3nMHiX4FEctAN1abAcNQDpc3qRHMo4Wb5GGPSg0&q=la+catrina&sa=X&ved=2ahUKEwjft7aYv_uNAxVMLEQIHXRIOq4QtKgLegQIERAB&biw=360&bih=716&dpr=3#sv=CAMS9AQa1AQKhgIKuQEStgEKd0FMa3RfdkVwbHpiSUp1dWZwdUtRZlQ3NFdpeEpMQVdwZUo2ZF9BdUJUUlg0OF9WMGVlR2dYbmNGR3JHYXJ5bVpkZFBsTHpMTFFFOUFjdFdtWUF2MTN5Rks1akNvbEVYYVp1Zy1ZOWRERnhpWUNkTTdnR3FhMWRJEhdIZmRTYUk3WUhPWFVrUElQcnNxSTRRRRoiQUZNQUdHb25iREtjMm1GcUxzbGZ0Yzk2MDRaSV9mZ2MydxIDODQ5GgEzIg8KAXESCmxhIGNhdHJpbmEiBwoDdGJzEgAiJgoEZXFsZBIeQ2dJSUFCQUFPZ1FJQVJBQVZTdGhDRDl0NkpNTlB3ErYCCs8BEswBCowBQUxrdF92R3dESXY4SEM1WGNpa0d5aHpNb2I1THZyMEtOaTRFSlc4RS1GXzhUVWZLT2RRWHFZTjVoQnMzSUw1WlFMekNXWnJ0M19VSE01ZlQ0eTdOZzZ1NXdpZ2lWbHA5VDNITnA5WUJaalVUMnRndTZFSzg1N0dDSEg5QVA3UGFXYTdJUXhSQ2ZQYU0SF0hmZFNhSTdZSE9YVWtQSVByc3FJNFFFGiJBRk1BR0dvcmxuM0NGXzBQYUsyQzY2QmEySHZsc0NSN2hREgQ0Njk4GgEzIhgKBmltZ2RpaRIOdWVxZThsZldOWlJFV00iFwoFZG9jaWQSDkZkZ1ZielpZWUNaWHlNIiYKBGVxbGQSHkNnSUlBQkFBT2dRSUFSQUFWU3RoQ0Q5dDZKTU5QdyoQZS11ZXFlOGxmV05aUkVXTSAEKhcKAXMSEGUt" alt="arte">
+        <h3> la catrina</h3>
+        <p>año:1912/GUADALUPE POSADA</p>
+        <p> Cultura representativa a la cultura de Mexico</p>
+<div class="products-container">
+    <div class="art">
+        <img src="https://th.bing.com/th/id/OIP.C7IrZc14f9jhCEsw7meIPwHaF0?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="pintura">
+        <h3>henry ford hospital</h3>
+        <p>año:1932/ FRIDA</p>
+        <p>experiencia de Frida al dar a luz un varon muerto el 4 de julio.</p>
+    </div>
+    <div class="art">
+        <img src="https://th.bing.com/th/id/R.af812b5e0d6b209bd0c704ad168d21ae?rik=NdjotbDXpDTORQ&riu=http%3a%2f%2flainterpretaciondelarte.weebly.com%2fuploads%2f3%2f8%2f6%2f2%2f38625451%2f747679335.jpg&ehk=xWlvqYCijkfxQZIpoHAAkjm5%2flvk5THxAkp6SUOfnTE%3d&risl=&pid=ImgRaw&r=0" alt="Pintura">
+        <h3>Las dos Fridas</h3>
+        <p>año:1939/ FRIDA</p>
+        <p>una representacion de la dualidad que existe dentro de todos, la lucha entre nuestro yo interior y nuestra personalidad externa</p>
+   
+    </div>
+    
+</div>
+
+</body>
+</html>
+  <hr>
+  <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">Pintores de Mexico</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+los Pintores mexicanos han marcado la cultura con el tiempo, el estilo de cada artista mexicano es importanteu
+  </div>
+  </div>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
